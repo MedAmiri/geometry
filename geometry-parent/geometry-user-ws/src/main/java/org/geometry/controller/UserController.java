@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController("/")
 public class UserController {
+	
+	@RequestMapping(value = "/user", method = {RequestMethod.GET})
+    public String get(@Valid @PathVariable String name) {
+        return "Hello, " + name + "!";
+	}
 	
 	@RequestMapping(value = "/sign", method = {RequestMethod.POST})
     public String create(@Valid @PathVariable String name) {
