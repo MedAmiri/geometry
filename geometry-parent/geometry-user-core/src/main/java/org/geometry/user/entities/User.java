@@ -4,26 +4,31 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "USER")
 public class User {
 	
 	@Id
-	@Column
+	@Column(name = "id")
 	private long id;
 	
-	@Column
+	@Column(name ="firstname")
 	private String firstName;
 	
-	@Column
+	@Column(name = "lastname")
 	private String lastName;
 	
-	@Column
+	@Column(name = "birthdate")
 	private LocalDate birthDate;
-
+	
+	@OneToOne(fetch = FetchType.LAZY)
+	private Loging loging;
+	
 	public long getId() {
 		return id;
 	}
