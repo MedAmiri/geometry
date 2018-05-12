@@ -33,6 +33,7 @@
 
 	<modules>
 		<module>geometry-core</module>
+		<module>geometry-user-core</module>
 		<module>geometry-ws</module>
 		<module>geometry-web</module>
 	</modules>
