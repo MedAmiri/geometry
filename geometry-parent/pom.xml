@@ -15,7 +15,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>3.8.1</junit.version>
-		<spring.boot.version>2.0.1.RELEASE</spring.boot.version>
+		<spring.boot.version>1.5.6.RELEASE</spring.boot.version>  <!-- 2.0.1.RELEASE  -->
 		<maven.plugin.compiler.version>3.7.0</maven.plugin.compiler.version>
 	</properties>
 
@@ -34,6 +34,9 @@
 	<modules>
 		<module>geometry-core</module>
 		<module>geometry-ws</module>
+		<module>geometry-user-core</module>
+		<module>geometry-user-ws</module>
 		<module>geometry-web</module>
+		<module>geometry-config</module>
 	</modules>
 </project>
