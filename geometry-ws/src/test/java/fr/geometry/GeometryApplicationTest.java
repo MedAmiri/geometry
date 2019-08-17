@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class GeometryApplicationTests {
+public class GeometryApplicationTest {
 
 	@Test
 	public void contextLoads() {
